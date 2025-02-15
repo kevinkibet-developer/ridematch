@@ -1,89 +1,600 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+    
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jewel Theme">
+        <meta name="description" content="Wheel - Responsive and Modern Car Rental Website Template">
+        <meta name="keywords" content="">
+        <title>RideMatch - Tinder for Ridesharing</title>
+        <link rel="shortcut icon" href="images/Black and White Automotive Logo.png" type="image/x-icon">
+        <!-- reset css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/css_reset.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.datetimepicker.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+        <!-- preload -->
+        <link rel="stylesheet" type="text/css" href="assets/css/loaders.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="">
+        <!-- MAIN -->
+        <div class="load-wrap">
+            <div class="wheel-load">
+                <img src="images/loader.gif" alt="" class="image">
+            </div>
+        </div>
+        <div class="wheel-menu-wrap ">
+            <div class="container-fluid wheel-bg1">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="wheel-logo">
+                            <a href="index.html"><img src="images/Black and White Automotive Logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-xs-12 padd-lr0">
+                        <div class="wheel-top-menu clearfix">
+                            <div class="wheel-top-menu-info">
+                                <div class="top-menu-item"><a href="#"><i class="fa fa-phone"></i><span>+254 784670394</span></a></div>
+                                <div class="top-menu-item"><a href="#"><i class="fa fa-envelope"></i><span>ride.match.co@gmail.com</span></a></div>
+                            </div>
+                            <div class="wheel-top-menu-log">
+                                <div class="top-menu-item">
+                                    <div class="dropdown wheel-user-ico">
+                                        <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Account
+                                        <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="register.html">Login</a></li>
+                                            <li><a href="register.html">Register</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="top-menu-item">
+                                    <div class="dropdown wheel-lang-ico">
+                                        <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Eng
+                                        <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Brazil</a></li>
+                                            <li><a href="#">France</a></li>
+                                            <li><a href="#">Germany</a></li>
+                                            <li><a href="#">India</a></li>
+                                            <li><a href="#">Japan</a></li>
+                                            <li><a href="#">Serbia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 ">
+                        <div class="wheel-navigation">
+                            <nav id="dl-menu">
+                                <!-- class="dl-menu" -->
+                                <ul class="main-menu dl-menu">
+                                    <li class="menu-item   current-menu-parent menu-item-has-children   active-color ">
+                                        <a href="index.html">Home</a>
+                                       
+                                    <li class="menu-item current-menu-parent menu-item-has-children  ">
+                                        <a href=""> Services </a>
+                                     
+                                    <li class="menu-item   ">
+                                        <a href="reservation1.html">Reservation</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children  ">
+                                        <a href="contact.html">Contact</a>
+                                       
+                                    </li>
+                                    <li class="menu-item menu-item-has-children  ">
+                                        <a href="news.html">Reviews</a>
+                                        
+                                    </li>
+                                    <li class="menu-item ">
+                                        <a href="#">About Us</a>
+                                    </li>
+                                </ul>
+                                <div class="nav-menu-icon"><i></i></div>
+                            </nav>
+                            <a href="http://goo.gl/rUdkZt" class="wheel-cheader-but" target="_blank">SIGN IN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wheel-start">
+            <img src="images/bg1.jpg" alt="" class="wheel-img">
+            <div class="container padd-lr0">
+                <div class="col-lg-6 col-lg-push-6 ">
+                    <header class="wheel-header marg-lg-b100 marg-lg-t200  marg-md-b0 marg-md-t0">
+                        <h1>We Are RideMatch  </h1>
+                        <h2>Affordable - Fun - Safe</h2>
+                        <span>Tinder for Ridesharing</span>
+                    </header>
+                </div>
+                <div class="col-lg-6 col-lg-pull-6  padd-lr0">
+                    <div class="wheel-start-form">
+                        <form action="#">
+                            <label for="input-val11"><span>Dropping Off</span>
+                            <input type="text" id='input-val11' placeholder="ZIP, City, Airport or Address" required>
+                            </label>
+                            <label for="input-val12"><span>Picking Up</span>
+                            <input type="text" id='input-val12' placeholder="ZIP, City, Airport or Address" required>
+                            </label>
+                            <div class="clearfix">
+                                <div class="wheel-date">
+                                    <span>Pickup Date</span>
+                                    <label for="input-val13" class="fa fa-calendar">
+                                    <input  class="datetimepicker" id='input-val13' type="text" value="29 Apr">
+                                    </label>
+                                </div>
+                                <div class="wheel-date ">
+                                    <span>Pickup time</span>
+                                    <label for="input-val14" class="fa fa-clock-o">
+                                    <input class="timepicker" id='input-val14' type="text" value="18:00">
+                                    </label>
+                                </div>
+                                <div class="wheel-date">
+                                    <span>Return Date</span>
+                                    <label for="input-val15" class="fa fa-calendar">
+                                    <input  class="datetimepicker" id='input-val15' type="text" value="29 Apr">
+                                    </label>
+                                </div>
+                                <div class="wheel-date">
+                                    <span>Return Time</span>
+                                    <label for="input-val16" class="fa fa-clock-o">
+                                    <input class="timepicker" id='input-val16' type="text" value="18:00">
+                                    </label>
+                                </div>
+                                <div class="wheel-date">
+                                    <span>Driver’s Age</span>
+                                    <select class="selectpicker">
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                        <option>32</option>
+                                        <option>33</option>
+                                        <option>34</option>
+                                        <option>35</option>
+                                        <option>36</option>
+                                        <option>37</option>
+                                        <option>38</option>
+                                        <option>39</option>
+                                        <option>40</option>
+                                        <option>41</option>
+                                        <option>42</option>
+                                        <option>43</option>
+                                        <option>44</option>
+                                        <option>45</option>
+                                        <option>46</option>
+                                        <option>47</option>
+                                        <option>48</option>
+                                        <option>49</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                                <div class="wheel-date">
+                                    <span>Resident</span>
+                                    <select class="selectpicker">
+                                        <option value="001">Mombasa</option>
+                                        <option value="002">Kwale</option>
+                                        <option value="003">Kilifi</option>
+                                        <option value="004">Tana River</option>
+                                        <option value="005">Lamu</option>
+                                        <option value="006">Taita Taveta</option>
+                                        <option value="007">Garissa</option>
+                                        <option value="008">Wajir</option>
+                                        <option value="009">Mandera</option>
+                                        <option value="010">Marsabit</option>
+                                        <option value="011">Isiolo</option>
+                                        <option value="012">Meru</option>
+                                        <option value="013">Tharaka Nithi</option>
+                                        <option value="014">Embu</option>
+                                        <option value="015">Kitui</option>
+                                        <option value="016">Machakos</option>
+                                        <option value="017">Makueni</option>
+                                        <option value="018">Nyandarua</option>
+                                        <option value="019">Nyeri</option>
+                                        <option value="020">Kirinyaga</option>
+                                        <option value="021">Murang’a</option>
+                                        <option value="022">Kiambu</option>
+                                        <option value="023">Turkana</option>
+                                        <option value="024">West Pokot</option>
+                                        <option value="025">Samburu</option>
+                                        <option value="026">Trans Nzoia</option>
+                                        <option value="027">Uasin Gishu</option>
+                                        <option value="028">Elgeyo Marakwet</option>
+                                        <option value="029">Nandi</option>
+                                        <option value="030">Baringo</option>
+                                        <option value="031">Laikipia</option>
+                                        <option value="032">Nakuru</option>
+                                        <option value="033">Narok</option>
+                                        <option value="034">Kajiado</option>
+                                        <option value="035">Kericho</option>
+                                        <option value="036">Bomet</option>
+                                        <option value="037">Kakamega</option>
+                                        <option value="038">Vihiga</option>
+                                        <option value="039">Bungoma</option>
+                                        <option value="040">Busia</option>
+                                        <option value="041">Siaya</option>
+                                        <option value="042">Kisumu</option>
+                                        <option value="043">Homa Bay</option>
+                                        <option value="044">Migori</option>
+                                        <option value="045">Kisii</option>
+                                        <option value="046">Nyamira</option>
+                                        <option value="047">Nairobi City</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////// -->
+        <div class="wheel-bg2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="wheel-header text-center marg-lg-t140 marg-lg-b340 marg-md-t140 marg-md-b140 marg-sm-t70 ">
+                            <h5>the Biggest Online </h5>
+                            <h3>SWIPE <span>MATCH</span>  RIDE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wheel-clients">
+            <div class="container padd-lr0">
+                <div class="row">
+                    <div class="col-md-4 padd-r0 padd-md-lr15">
+                        <div class="wheel-service-item text-center wheel-bg3">
+                            <div class="wheel-service-logo">
+                                <img src="images/ico1.png" alt="">
+                            </div>
+                            <h5>SWIPE</h5>
+                            <p>Find your perfect travel companion with a simple swipe. Set your preferences—music taste, chatty or quiet ride, smoking or non-smoking—and browse drivers or passengers heading your way. If someone catches your interest, swipe right! If not, swipe left and keep looking.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 padd-lr0 padd-md-lr15">
+                        <div class="wheel-service-item text-center wheel-service-active wheel-bg4">
+                            <div class="wheel-service-logo">
+                                <img src="images/ico2.png" alt="">
+                            </div>
+                            <h5>MATCH</h5>
+                            <p>When you and another traveler both swipe right, it’s a match! You can chat within the app to confirm pickup details, timing, and fare. No awkward negotiations—the app suggests fair pricing, and you can check ratings to ensure a smooth experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 padd-l0 padd-md-lr15">
+                        <div class="wheel-service-item  text-center wheel-bg5">
+                            <div class="wheel-service-logo">
+                                <img src="images/ico3.png" alt="">
+                            </div>
+                            <h5>RIDE</h5>
+                            <p>Once everything is set, just show up and enjoy the journey. Track your ride in real-time for safety, and at the end, rate your travel buddy. Whether you’re saving on costs, making new friends, or just getting where you need to go, RideMatch makes every trip better. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <div class="wheel-service-img">
+                        <img src="images/i1.png" alt="" class="wheel-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////// -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="wheel-header wheel-testi-header text-center marg-lg-t155 marg-lg-b65 marg-md-t50  marg-md-b50">
+                        <h3>Our Mission is <span>Client’s</span> Satisfaction</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="wheel-testimonial text-center">
+                        <p> RideMatch will transform the way people travel, making it sustainable, social, and fun. Whether it’s daily commutes or long-distance trips, RideMatch ensures you never travel alone again.  
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 padd-lr0 ">
+                    <div class="wheel-testimonial-item">
+                        <i class="fa fa-users"></i>
+                        <span data-to="20" data-speed="10000"></span><b>+</b>
+                        <p>Dedicated Employees</p>
+                    </div>
+                    <div class="wheel-testimonial-item">
+                        <i class="fa fa-thumbs-o-up"></i>
+                        <span data-to="9053" data-speed="500"></span><b>+</b>
+                        <p>Satisfied Customers</p>
+                    </div>
+                    <div class="wheel-testimonial-item">
+                        <i class="fa  fa-car"></i>
+                        <span data-to="89" data-speed="6000"></span><b>+</b>
+                        <p>100% Fit Veihicles</p>
+                    </div>
+                    <div class="wheel-testimonial-item">
+                        <i class="fa fa-trophy"></i>
+                        <span data-to="111" data-speed="1000"></span><b>+</b>
+                        <p>Int. Awards Achieved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////// -->
+        <div class="wheel-collection wheel-bg2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="wheel-header text-center marg-lg-t140 marg-lg-b65  marg-md-t50 ">
+                            <h5>Enjoy seamless carpooling!</h5>
+                            <h3>ride or get a lift <span>with diverse cars</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="tabs">
+                            <div class="tabs-header">
+                                <ul>
+                                    <li class="active"><a href="#">Most Popular</a></li>
+                                    <li><a href="#">Newly Added</a></li>
+                                    <li><a href="#">On Sale</a></li>
+                                </ul>
+                            </div>
+                            <div class="tabs-content  marg-lg-b30">
+                                <div class="tabs-item active ">
+                                    <div class="swiper-container" data-autoplay="0" data-touch="1" data-mouse="0" data-xs-slides="1" data-sm-slides="2" data-md-slides="4" data-lg-slides="6" data-add-slides="6" data-slides-per-view="responsive" data-loop="1" data-speed="1000">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Nissan Juke' data-carClass='Luxury Sports Car' data-price='$100' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/z-car-1.png'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Chevrolet Malibu' data-carClass='Luxury Sports Car' data-price='$100' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i32.jpg'><img src="images/i5.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='Bugatti Veyron' data-carClass='Luxury Sports Car' data-price='2' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i33.jpg'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Audi S4' data-carClass='Luxury Sports Car' data-price='$10' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i34.jpg'><img src="images/i4.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2017 Hyundai Santa Fe' data-carClass='Luxury Sports Car' data-price='4' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i36.jpg'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='Porsche Boxter Spyder' data-carClass='Luxury Sports Car' data-price='4' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i37.jpg'><img src="images/i2.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-arrow-left fa fa-angle-left"></div>
+                                        <div class="swiper-arrow-right fa fa-angle-right"></div>
+                                        <div class="pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="tabs-item  ">
+                                    <div class="swiper-container" data-autoplay="0" data-touch="1" data-mouse="0" data-xs-slides="1" data-sm-slides="2" data-md-slides="4" data-lg-slides="6" data-add-slides="6" data-slides-per-view="responsive" data-loop="1" data-speed="1000">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Nissan Juke' data-carClass='Luxury Sports Car' data-price='$100' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/z-car-1.png'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Chevrolet Malibu' data-carClass='Luxury Sports Car' data-price='$100' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i32.jpg'><img src="images/i5.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='Bugatti Veyron' data-carClass='Luxury Sports Car' data-price='2' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i33.jpg'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Audi S4' data-carClass='Luxury Sports Car' data-price='$10' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i34.jpg'><img src="images/i4.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2017 Hyundai Santa Fe' data-carClass='Luxury Sports Car' data-price='4' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i36.jpg'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='Porsche Boxter Spyder' data-carClass='Luxury Sports Car' data-price='4' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i37.jpg'><img src="images/i2.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-arrow-left fa fa-angle-left"></div>
+                                        <div class="swiper-arrow-right fa fa-angle-right"></div>
+                                        <div class="pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="tabs-item  ">
+                                    <div class="swiper-container" data-autoplay="0" data-touch="1" data-mouse="0" data-xs-slides="1" data-sm-slides="2" data-md-slides="4" data-lg-slides="6" data-add-slides="6" data-slides-per-view="responsive" data-loop="1" data-speed="1000">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Nissan Juke' data-carClass='Luxury Sports Car' data-price='$100' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/z-car-1.png'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Chevrolet Malibu' data-carClass='Luxury Sports Car' data-price='$100' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i32.jpg'><img src="images/i5.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='Bugatti Veyron' data-carClass='Luxury Sports Car' data-price='2' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i33.jpg'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2016 Audi S4' data-carClass='Luxury Sports Car' data-price='$10' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i34.jpg'><img src="images/i4.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='2017 Hyundai Santa Fe' data-carClass='Luxury Sports Car' data-price='4' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i36.jpg'><img src="images/i3.png" alt=""></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wheel-collection-item" data-name='Porsche Boxter Spyder' data-carClass='Luxury Sports Car' data-price='4' data-text='Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsu nec sagittis sem nibh id elit.' data-bags='2 Bags' data-passenger='2 PASSENGERS' data-speed='5.6/100 MPG' data-img='images/i37.jpg'><img src="images/i2.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-arrow-left fa fa-angle-left"></div>
+                                        <div class="swiper-arrow-right fa fa-angle-right"></div>
+                                        <div class="pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////////////////////////////// -->
+        <div class="container padd-lr0">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="wheel-info-img  marg-lg-t150 marg-lg-b150 marg-md-t100 marg-md-b100">
+                        <img src="images/i7.png" alt="" class="wheel-img">
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="wheel-info-text  marg-lg-t150 marg-lg-b150 marg-md-t100 marg-md-b100 marg-sm-t50 marg-sm-b50">
+                        <div class="wheel-header">
+                            <h5>Who we are  </h5>
+                            <h3>We Love Our <span>Customers</span></h3>
+                        </div>
+                        <span>We are a dynamic carpooling platform that connects riders with drivers for a smooth, affordable, and convenient travel experience. Whether you need a ride or want to offer one, we make every trip comfortable and hassle-free.  </span>
+                        <p>RideMatch makes travel more affordable and convenient, allowing passengers to save money while enjoying personalized, comfortable trips. It also promotes an eco-friendly impact by reducing empty car seats, helping cut down on carbon emissions. Beyond savings, the platform fosters safe and social connections, ensuring passengers travel with like-minded people, making rides more enjoyable and less awkward. For drivers, RideMatch offers great perks, helping them offset travel costs while gaining good company on the road. </p> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////// -->
+        <div class="wheel-deals text-center">
+            <img src="images/Westlands.png" alt="" class="wheel-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="wheel-header">
+                            <h5>Be with us </h5>
+                            <h3>We offer great <span>deals</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="wheel-deals-text">
+                            <p>RideMatch will transform the way people travel, making it sustainable, social, and fun. Whether it’s daily commutes or long-distance trips, RideMatch ensures you never travel alone again.</p>
+                            <a href="reservation1.html" class="wheel-btn">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////// -->
+        
+        <!-- FOOTER -->
+        <!-- ///////////////// -->
+        <footer class="wheel-footer">
+            <img src="images/bg4.jpg" alt="" class="wheel-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3  col-sm-6  padd-lr0">
+                        <div class="wheel-address">
+                            <div class="wheel-footer-logo"><a href="index.html"><img src="images/Black and White Automotive Logo (1).jpg" alt=""></a></div>
+                            <ul>
+                                <li><span><i class="fa fa-map-marker"></i>GTC , Westalnds, <br>
+                                    Nairobi - Kenya  </span>
+                                </li>
+                                <li><a href="#"><span><i class="fa fa-phone"></i> +254 784670394</span></a></li>
+                                <li><a href="#"><span><i class="fa fa-envelope"></i>ridematch@gmail.com</span></a></li>
+                            </ul>
+                            <div class="wheel-soc">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-share-alt"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6  padd-lr0">
+                        <div class="wheel-footer-item">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li><a href="#" class="">About us</a></li>
+                                <li><a href="#" class="">Customer Service</a></li>
+                                <li><a href="#" class="">Contact Us</a></li>
+                                <li><a href="#" class="">Safety Recall</a></li>
+                                <li><a href="#" class="">Privacy policy</a></li>
+                                <li><a href="#" class="">Site Map</a></li>
+                                <li><a href="#" class="">Terms & condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6 padd-lr0">
+                        <div class="wheel-footer-gallery">
+                            <h3>Photo Gallery</h3>
+                            <div class="  clearfix">
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i11.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i12.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i13.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i14.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i15.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i16.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i17.jpg" alt=""></a></div>
+                                <div class="wheel-footer-galery-item"><a href="#"><img src="images/i18.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="wheel-footer-info wheel-bg6">
+            <div class="container">
+                <div class="row">
+                   <div class="col-lg-8 col-sm-6  padd-lr0"><span>&#169; RIDEMATCH 2025 | Copyright &copy; <a target="_blank" href="https://kavetechsolutions.netlify.app/">Designed by Kavetech Solutions</a> </span></div>
+                    <div class="col-lg-4 col-sm-6 padd-lr0">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html"> Pages</a></li>
+                            <li><a href="index.html"> Listings</a></li>
+                            <li><a href="reservation1.html"> Reservation</a></li>
+                            <li><a href="">Location</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts project -->
+        <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- count -->
+        <script type="text/javascript" src='assets/js/jquery.countTo.js'></script>
+        <!-- google maps -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt5tJTim4lOO3ojbGARhPd1Z3O3CnE-C8" type="text/javascript"></script>
+        <!-- swiper -->
+        <script type="text/javascript" src="assets/js/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="assets/js/equalHeightsPlugin.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.datetimepicker.full.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+        <!-- sixth block end -->
+    </body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.3.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.3.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>
